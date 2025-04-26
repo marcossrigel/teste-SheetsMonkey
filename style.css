@@ -1,0 +1,131 @@
+:root {
+  --color-white: white;
+  --color-gray: #ccc9c9;
+  --color-dark: #1d2129;
+  --color-blue: #0a6be2;
+  --color-green: #42b72a;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--color-gray);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.label {
+  display: block;
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 4px;
+  margin-left: 2px;
+  font-weight: bold;
+}
+
+.linha {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 12px;
+  width: 100%;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+.linha-genero{
+  display: flex;
+  gap: 10px;
+  margin-bottom: 16px;
+  width: 100%;
+}
+
+.genero-opcao {
+  flex: 1;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 10px;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+.genero-opcao input[type="radio"] {
+  margin: 0;
+}
+
+.formulario {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 360px;
+}
+
+.formulario h1{
+  text-align: center;
+}
+
+.btn {
+  padding: 15px;
+  border: none;
+  color: var(--color-white);
+  border-radius: 5px;
+  width: 100%;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-create-account {
+  background-color: var(--color-green);
+}
+
+.btn-create-account:hover {
+  background-color: #36a420;
+}
+
+.btn-create-account:active {
+  background-color: #2d8e1b;
+}
+
+.campo {
+  flex: 1;
+  padding: 10px;
+  min-width: 0;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+.formulario h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.texto-login {
+  text-align: center;
+  color: var(--color-blue);
+  font-size: 14px;
+  margin-top: 12px;
+}
+
+.texto-login a {
+  color: var(--color-blue);
+  text-decoration: none;
+}
+
+.texto-login a:visited {
+  color: var(--color-blue);
+  text-decoration: none;
+}
+
+.texto-login a:hover {
+  text-decoration: underline;
+}
